@@ -24,7 +24,7 @@ if (isset($_POST['CPF']) || isset($_POST['Senha'])) {
 		$quantidade = $sql_query->num_rows;
 
 		if($quantidade == 1){
-			header("Location: painel.php");
+			header("Location: doadorHome.php");
 			exit();
 		} else {
 			$msg = "Não foi possivel fazer login, informe CPF ou senha corretamente";

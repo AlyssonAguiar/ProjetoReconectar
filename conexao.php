@@ -3,7 +3,7 @@
 $hostname = "127.0.0.1";
 $bancodedados = "banco1";
 $usuario = "root";
-$senha = "";
+$senha = "123456";
 
 $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
 mysqli_set_charset($mysqli,"utf8");

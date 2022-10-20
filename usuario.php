@@ -25,12 +25,12 @@ $result = $mysqli->query($sql);
     <link rel="stylesheet" href="css/usuario.css" />
 </head>
 <body>
-    <header>
+<header>
     <div class="caixa">
       <nav>
-        <img src="imagens\logo-white.png" alt="logo-white.png" style="width:120px;height:35px;"> 
+        <img src="imagens\log1.png" alt="logo-white.png" style="width:180px;height:180px;"> 
         <ul class="nav-list">
-        <h5><a href="painel.php">Voltar ao Painel</a></h5>
+        <h5><a href="doadorHome.php">Voltar ao Painel</a></h5>
         <h5><a href="index.php">Sair</a></h5>
         </ul>
       </nav>
@@ -44,8 +44,6 @@ $result = $mysqli->query($sql);
             <?php
                while ($user_data = mysqli_fetch_assoc($result)) 
                {
-                echo "<td><img src=".$user_data['foto']."></td>";
-                echo "<tr>";
                 echo "<th scope='col'>Nome</th>";
                 echo "<th scope='col'>CPF</th>";
                 echo "<th scope='col'>Email</th>";
@@ -80,7 +78,6 @@ $result = $mysqli->query($sql);
                 echo "</tr>";   
                }
             ?>
-
           </tbody>
         </table>
         </div>

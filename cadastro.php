@@ -20,7 +20,7 @@ include("protect.php");
     <header>
     <div class="caixa">
       <nav>
-        <img src="imagens\logo-white.png" alt="logo-white.png" style="width:120px;height:35px;"> 
+        <img src="imagens\log1.png" alt="logo-white.png" style="width:180px;height:180px;"> 
         <ul class="nav-list">
         <h5><a href="painel.php">Voltar ao Painel</a></h5>
         <h5><a href="index.php">Sair</a></h5>
@@ -31,47 +31,29 @@ include("protect.php");
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="column is-4 is-offset-4">
-                    <h3 class="title has-text-grey">Cadastro de Currículo</h3>
+                    <h3 class="title has-text-grey">Cadastro de dispositivo</h3>
                     <div class="box">
-                        <form action="update.php" method="POST" enctype="multipart/form-data">
-                        <label for="imagem">Escolha uma foto de perfil</label>
-                        <input type="file" name="arquivo"/>
-                        <p>
-                        <br>
                             <div class="field">
                                 <div class="control">
-                                    <input name="email" type="text" class="input is-large" placeholder="E-mail" required>
+                                    <input name="nomecompleto" type="text" class="input is-large" placeholder="Nome completo" required>
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="control">
-                                    <input name="datanascimento" type="text" class="input is-large" placeholder="Data de Nascimento" required>
+                                    <input name="email" type="text" class="input is-large" placeholder="E-mail">
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="control">
-                                    <input name="nomecompleto" type="text" class="input is-large" placeholder="Nome completo">
+                                    <input name="linkedin" type="text" class="input is-large" placeholder="Tipo do dispositivo">
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="control">
-                                    <input name="formacao" type="text" class="input is-large" placeholder="Formação" required>
+                                    <input name="competenciapro" type="text" class="input is-large" placeholder="Modelo do dispositivo">
                                 </div>
-                            </div>
                             <div class="field">
-                                <div class="control">
-                                    <input name="experienciapro" type="text" class="input is-large" placeholder="Experien proficional">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control">
-                                    <input name="linkedin" type="text" class="input is-large" placeholder="Linkedin">
-                                </div>
-                            </div>
-                            <br>
-                            <h4 class="title has-text-grey">Cadastro de endereço</h4>
-                            <div class="field">
-                                <div class="control">
+                                <div class="control" style="margin-top: 10px;">
                                     <input name="CEP" type="text" class="input is-large" placeholder="CEP">
                                 </div>
                             </div>
@@ -95,8 +77,18 @@ include("protect.php");
                                     <input name="uf" type="text" class="input is-large" placeholder="UF">
                                 </div>
                             </div>
+                            </div>
+                            <br>
+                            <div class="dropbox" style="padding-right: 60PX">
+                              <label for="cars" style="font-size: 16px;">ONG:</label>
+                              <select name="cars" id="cars" style="height: 30px">
+                                <option value="saab">Gente Amiga</option>
+                                <option value="opel">Caps Ponta do Coral</option>
+                              </select>
+                              <br>
+                        </div>
+                        <br>
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Cadastrar</button>
-                        </form>
                     </div>
                 </div>
             </div>

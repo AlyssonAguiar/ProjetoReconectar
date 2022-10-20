@@ -27,22 +27,22 @@ include("conexao.php");
     </header>
     <main class="cards">
     	<section class="card contact">
-    		<img src="imagens\id-card.png" alt="Usuário.">
+    		<img src="Imagens\user.png" alt="Usuário.">
     		<h3>Usuário</h3>
     		<span>Veja as informações ja cadastradas</span>
     		<a href="usuario.php"><button>Clique aqui</button></a>
     	</section>
-    	<section class="card vagas">
-    		<img src="imagens\document.png" alt="Vagas.">
-    		<h3>Assistências Técnica</h3>
-    		<span>Procure as assistências técnicas mais próximas de você</span>
-    		<a href="pagina_vagas.php"><button>Clique aqui</button></a>
-    	</section>
-    	<section class="card curriculo">
-    		<img src="imagens\agreement.png" alt="Cadastro de currículo.">
+		<section class="card curriculo">
+    		<img src="imagens\heart.png" alt="Cadastro de currículo.">
     		<h3>Cadastro de Dispositivo</h3>
     		<span> Cadastre seu dispositivo a ser doado </span>
     		<a href="cadastro.php"><button>Clique aqui</button></a>
+    	</section>
+    	<section class="card vagas">
+		<img src="imagens\place.png" alt="Cadastro de currículo.">
+    		<h3>Acompanhe suas Doações</h3>
+    		<span> Acompanhe aqui todas as sua doações </span>
+    		<a href="doadorAcompanhar.php"><button>Clique aqui</button></a>
     	</section>
     </main>
     <script src="mobile-navbar.js"></script>
